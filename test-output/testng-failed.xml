@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Test automtion regression suite]" parallel="tests">
+  <test thread-count="3" name="Rediff Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.my.test.RediffTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="rediffUrlTest"/>
+          <include name="rediffTitleTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.my.test.RediffTest -->
+    </classes>
+  </test> <!-- Rediff Test(failed) -->
+  <test thread-count="3" name="Google Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.my.test.GoogleTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="googleUrlTest"/>
+          <include name="setUp"/>
+          <include name="googleTitleTest"/>
+        </methods>
+      </class> <!-- com.my.test.GoogleTest -->
+    </classes>
+  </test> <!-- Google Test(failed) -->
+  <test thread-count="3" name="Amazon Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.my.test.AmazonTestWithBM">
+        <methods>
+          <include name="tearDown"/>
+          <include name="mobileLinkPresentTest"/>
+          <include name="setUp"/>
+          <include name="amazonTitleTest"/>
+          <include name="amazonUrlTest"/>
+        </methods>
+      </class> <!-- com.my.test.AmazonTestWithBM -->
+    </classes>
+  </test> <!-- Amazon Test(failed) -->
+</suite> <!-- Failed suite [Test automtion regression suite] -->
